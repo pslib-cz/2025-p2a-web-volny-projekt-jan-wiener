@@ -3,8 +3,8 @@ import lgZoom from 'lightgallery/plugins/zoom';
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import 'lightgallery/css/lightgallery-bundle.css';
 
-const prj1Image1 = new URL('./images/projects/mctest.webp', import.meta.url).href;
-const prj1Image2 = new URL('./images/projects/mctest2.webp', import.meta.url).href;
+const prj1Image1 = new URL('/images/projects/mctest.webp', import.meta.url).href;
+const prj1Image2 = new URL('/images/projects/mctest2.webp', import.meta.url).href;
 
 
 const prj1Images = [

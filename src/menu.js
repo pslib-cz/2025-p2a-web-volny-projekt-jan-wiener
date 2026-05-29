@@ -7,4 +7,6 @@ function toggleMobileMenu() {
     }
 }
 
+window.toggleMobileMenu = toggleMobileMenu;
+
 
