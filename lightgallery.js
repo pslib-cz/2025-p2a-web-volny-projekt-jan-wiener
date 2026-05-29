@@ -1,31 +1,15 @@
-// lightGallery(document.getElementById('gallery'), {
-//     // Plugins to activate
-//     plugins: [lgZoom, lgThumbnail, lgFullscreen],
-//     // Core options
-//     speed: 400,               // slide transition speed (ms)
-//     download: true,           // show download button
-//     counter: true,            // "1 / 7" counter
-//     // Zoom plugin options
-//     scale: 1,
-//     zoom: true,
-//     // Thumbnail plugin options
-//     thumbnail: true,
-//     animateThumb: true,
-//     thumbWidth: 100,
-//     thumbHeight: '65px',
-//     toggleThumb: true,        // hide/show thumbnail strip
-//     // Swipe on mobile
-//     swipeToClose: true,
-//     closable: true,
-//     // Captions from data-sub-html
-//     subHtmlSelectorRelative: false,
-//   });
+import lightGallery from 'lightgallery';
+import lgZoom from 'lightgallery/plugins/zoom';
+import lgThumbnail from 'lightgallery/plugins/thumbnail';
+import 'lightgallery/css/lightgallery-bundle.css';
 
+const prj1Image1 = new URL('./images/projects/mctest.webp', import.meta.url).href;
+const prj1Image2 = new URL('./images/projects/mctest2.webp', import.meta.url).href;
 
 
 const prj1Images = [
-    { src: 'images/projects/mctest.webp', thumb: 'images/projects/mctest.webp', subHtml: '<h4>Caption 1</h4>' },
-    { src: 'images/projects/mctest2.webp', thumb: 'images/projects/mctest2.webp', subHtml: '<h4>Caption 2</h4>' },
+    { src: prj1Image1, thumb: prj1Image1, subHtml: '<h4>Caption 1</h4>' },
+    { src: prj1Image2, thumb: prj1Image2, subHtml: '<h4>Caption 2</h4>' },
 ];
 
 const prj1Trigger = document.querySelector('#prj1 a');
