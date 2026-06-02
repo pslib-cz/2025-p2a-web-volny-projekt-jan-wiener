@@ -1,0 +1,135 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 16px;
+    color: white;
+    padding: 0rem 1rem 0rem 1rem;
+}
+
+.page-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+    align-self: stretch;
+}
+
+.page-header__intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    text-align: center;
+}
+
+.page-header__eyebrow {
+    align-self: stretch;
+    text-align: center;
+    background: var(--TextGradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.page-header__title {
+    align-self: stretch;
+    text-align: center;
+    background: linear-gradient(97deg, #1696F2 12.41%, #E526EF 75.98%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.page-header__logo {
+    aspect-ratio: 197 / 116;
+    width: 197px;
+    height: 116px;
+}
+
+.content-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    align-self: stretch;
+    text-align: start;
+}
+
+.content-actions {
+    display: flex;
+    padding: 8px 0;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.projects-page {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.projects-page__intro {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+}
+
+.projects__subtitle {
+    padding-top: 12px;
+    text-align: center;
+}
+
+footer {
+    margin-top: 2rem;
+    width: 100%;
+    gap: 1rem;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding-bottom: 1.4rem;
+}
+
+.site-footer__column {
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+    .page {
+        padding: 0rem 5rem;
+    }
+
+    .content-section {
+        padding-right: 10rem;
+    }
+
+    .page-header {
+        display: flex;
+        flex-direction: row;
+        padding: 24px 16px;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .text--display {
+        font-size: 70px;
+    }
+
+    .text--heading {
+        font-size: 26px;
+    }
+}
