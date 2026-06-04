@@ -3,13 +3,15 @@ import lgZoom from 'lightgallery/plugins/zoom';
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import 'lightgallery/css/lightgallery-bundle.css';
 
-const prj1Image1 = new URL('/images/projects/mctest.webp', import.meta.url).href;
-const prj1Image2 = new URL('/images/projects/mctest2.webp', import.meta.url).href;
+const prj1Image1 = new URL('/images/projects/orsu1.png', import.meta.url).href;
+const prj1Image2 = new URL('/images/projects/orsu2.png', import.meta.url).href;
+const prj1Image3 = new URL('/images/projects/orsu3.png', import.meta.url).href;
 
 
 const prj1Images = [
     { src: prj1Image1, thumb: prj1Image1, subHtml: '<h4>Caption 1</h4>' },
     { src: prj1Image2, thumb: prj1Image2, subHtml: '<h4>Caption 2</h4>' },
+    { src: prj1Image3, thumb: prj1Image3, subHtml: '<h4>Caption 3</h4>' },
 ];
 
 const prj1Trigger = document.querySelector('#prj1 a');

@@ -55,40 +55,52 @@
 
     <div class="page projects-page">
 
-        <div class="projects-page__intro">
-            <p class="text text--display enlarge">My Projects</p>
+        <div class="page-header">
+            <p class="text text--display enlarge page-header__title-accent ">My Projects</p>
         </div>
 
 
         <div class="content-section">
             <p class="text text--heading enlarge">About my projects</p>
-            <p>Having created several projects throughout my journey in programming, I have gained valuable experience in various technologies and methodologies. Although I have developed many smaller programs for personal use, I have also spent time working on larger, more complex projects that have allowed me to apply my skills in more complex, real-world scenarios.</p>
+            <p>Having created several projects throughout my journey in programming, I have gained valuable experience
+                in various technologies and methodologies. Although I have developed many smaller programs for personal
+                use, I have also spent time working on larger, more complex projects that have allowed me to apply my
+                skills in more complex, real-world scenarios. For learning purposes, I usually don't use AI agents for
+                building my personal projects.</p>
         </div>
 
         <div class="featured-projects">
             <div class="featured-project" id="prj1">
                 <div class="featured-project__header">
-                    <a href="images/projects/mctest.webp" data-lg-size="1600-900"
+                    <a href="images/projects/orsu1.png" data-lg-size="1600-900"
                         data-sub-html="<h4>Mountain Trail</h4><p>Early morning light on the ridge</p>"
                         data-caption="Mountain Trail" class="featured-project__image">
 
-                        <img src="images/projects/mctest.webp" alt="">
+                        <img src="images/projects/orsu1.png" alt="">
                     </a>
 
-                    <p class="text text--heading featured-project__title">Minecraft Test</p>
+                    <p class="text text--display featured-project__title enlarge">o-rs-u</p>
                 </div>
 
                 <div class="featured-project__body">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ullam quidem ipsam
-                        consectetur
-                        exercitationem, iste, minima reprehenderit quis repudiandae facere eum quaerat! Sed nihil
-                        distinctio
-                        sunt, voluptatem incidunt aut adipisci.</p>
+                    <p class="enlarge">O-rs-u is, as of now, my biggest project. It is essentially the popular rhythm
+                        game "osu!"
+                        rewritten in Rust, with the help of the popular all-code game engine, Bevy. <br>
+                        My original objective was to make an alternative to osu! with better performance,
+                        which I partly achieved - it is more stable under load, having better 1% fps,
+                        but struggling to keep up in raw fps, which is a limitation of the overkill game engine. <br>
+                        Considering this, I might decide to rewrite my rust version in wgpu to maximize the performance,
+                        and to learn something new. <br>
+                        Although some things like a level GUI or certain gameplay gimmicks are missing,
+                        the game is still in development, with plans for either custom in-game level browser, or an
+                        external level browser (iced gui). <br>
+                    </p>
                 </div>
                 <div class="featured-project__actions">
-                    <a href="./projects.html" class="button button--primary">
+                    <!-- <a href="./projects.html" class="button button--primary">
                         <p class="text text--heading">Projects</p>
-                    </a><a href="./projects.html" class="button button--secondary">
+                    </a> -->
+                    <a href="https://github.com/jan-wiener/o-rs-u" class="button button--secondary" target="_blank">
                         <p class="text text--heading">Github</p>
                     </a>
                 </div>
@@ -106,138 +118,124 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="project-card project-card--accent ">
-                        <p class="project-card__header text text--heading">O-rs-u</p>
+                        <p class="project-card__header text text--heading">KDE Discord RPC</p>
                         <div class="project-card__body">
-                            <p>1</p>
+                            <p>A small utility to integrate KDE media playback with Discord RPC</p>
                         </div>
                         <div class="project-card__info-list">
                             <div class="project-card__info">
                                 <p class="project-card__info-text--dark ">
-                                    Hello
+                                    Language
                                 </p>
-                                <p>Hello</p>
+                                <p>Rust</p>
                             </div>
                             <div class="project-card__info">
                                 <p class="project-card__info-text--accent ">
-                                    Hello
+                                    Category
                                 </p>
-                                <p>Hello</p>
+                                <p>Utility</p>
                             </div>
+
                         </div>
+                        <a href="https://github.com/jan-wiener/discord-rpc-linux-rs" class="button button--secondary" target="_blank">
+                            <p class="text text--heading">Github</p>
+                        </a>
                     </div>
                 </div>
 
                 <div class="swiper-slide">
                     <div class="project-card project-card--accent ">
-                        <p class="project-card__header text text--heading">O-rs-u</p>
+                        <p class="project-card__header text text--heading">A chess engine</p>
                         <div class="project-card__body">
-                            <p>2</p>
+                            <p>A very simple chess engine in Python, being of my first larger coding projects</p>
                         </div>
                         <div class="project-card__info-list">
                             <div class="project-card__info">
                                 <p class="project-card__info-text--dark ">
-                                    Hello
+                                    Language
                                 </p>
-                                <p>Hello</p>
+                                <p>Python</p>
                             </div>
                             <div class="project-card__info">
                                 <p class="project-card__info-text--accent ">
-                                    Hello
+                                    Category
                                 </p>
-                                <p>Hello</p>
+                                <p>Exercise</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="project-card project-card--accent ">
-                        <p class="project-card__header text text--heading">O-rs-u</p>
+                        <p class="project-card__header text text--heading">A kyber-encrypted messaging app</p>
                         <div class="project-card__body">
-                            <p>4</p>
+                            <p>A small python program for encrypted messaging in python.</p>
                         </div>
                         <div class="project-card__info-list">
                             <div class="project-card__info">
                                 <p class="project-card__info-text--dark ">
-                                    Hello
+                                    Language
                                 </p>
-                                <p>Hello</p>
+                                <p>Python</p>
                             </div>
                             <div class="project-card__info">
                                 <p class="project-card__info-text--accent ">
-                                    Hello
+                                    Category
                                 </p>
-                                <p>Hello</p>
+                                <p>App, Messenger</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="project-card project-card--accent ">
-                        <p class="project-card__header text text--heading">O-rs-u</p>
+                        <p class="project-card__header text text--heading">Cards against humanity</p>
                         <div class="project-card__body">
-                            <p>5</p>
+                            <p>A Qt6 python app & server for the popular card game "Cards against humanity".</p>
                         </div>
                         <div class="project-card__info-list">
                             <div class="project-card__info">
                                 <p class="project-card__info-text--dark ">
-                                    Hello
+                                    Language
                                 </p>
-                                <p>Hello</p>
+                                <p>Python</p>
                             </div>
                             <div class="project-card__info">
                                 <p class="project-card__info-text--accent ">
-                                    Hello
+                                    Category
                                 </p>
-                                <p>Hello</p>
+                                <p>Server & Client, Game, Gui</p>
                             </div>
                         </div>
+                        <a href="https://github.com/jan-wiener/karty-proti-lidskosti" class="button button--secondary" target="_blank">
+                            <p class="text text--heading">Github</p>
+                        </a>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="project-card project-card--accent ">
-                        <p class="project-card__header text text--heading">O-rs-u</p>
+                        <p class="project-card__header text text--heading">Keyboard macros for games</p>
                         <div class="project-card__body">
-                            <p>6</p>
+                            <p>A macro app for games, utilizing the kernel driver "intercept", which allows one to do
+                                advanced macros even for games, which don't typically allow it.</p>
                         </div>
                         <div class="project-card__info-list">
                             <div class="project-card__info">
                                 <p class="project-card__info-text--dark ">
-                                    Hello
+                                    Language
                                 </p>
-                                <p>Hello</p>
+                                <p>Rust, C</p>
                             </div>
                             <div class="project-card__info">
                                 <p class="project-card__info-text--accent ">
-                                    Hello
+                                    Category
                                 </p>
-                                <p>Hello</p>
+                                <p>Utility</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="project-card project-card--accent ">
-                        <p class="project-card__header text text--heading">O-rs-u</p>
-                        <div class="project-card__body">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo ad architecto sequi
-                            </p>
-                        </div>
-                        <div class="project-card__info-list">
-                            <div class="project-card__info">
-                                <p class="project-card__info-text--dark ">
-                                    Hello
-                                </p>
-                                <p>Hello</p>
-                            </div>
-                            <div class="project-card__info">
-                                <p class="project-card__info-text--accent ">
-                                    Hello
-                                </p>
-                                <p>Hello</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
 
 
