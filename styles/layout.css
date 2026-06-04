@@ -59,6 +59,7 @@
     gap: 10px;
     align-self: stretch;
     text-align: start;
+    margin-bottom: 0.5rem;
 }
 
 .content-actions {
@@ -90,14 +91,22 @@
     text-align: center;
 }
 
-footer {
+.footer__grid {
     margin-top: 2rem;
     width: 100%;
     gap: 1rem;
     max-width: 1000px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     padding-bottom: 1.4rem;
+}
+
+footer {
+    align-self: stretch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .site-footer__column {
@@ -126,10 +135,21 @@ footer {
     }
 
     .text--display {
+        font-size: 50px;
+    }
+
+    .text--display.enlarge{
         font-size: 70px;
     }
+    
 
     .text--heading {
         font-size: 26px;
     }
+
+    .text--heading.enlarge {
+        font-size: 34px;
+    }
+
+    
 }

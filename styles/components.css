@@ -28,6 +28,10 @@
     background: var(--Gradient-Background, linear-gradient(177deg, #080505 2.07%, #191830 51.24%, #1A0E0F 100%));
 }
 
+.button--orange {
+    background: var(--PurpleOrange, linear-gradient(177deg, #080505 2.07%, #191830 51.24%, #1A0E0F 100%));
+}
+
 .button .text--heading {
     font-size: 24px;
 }
@@ -203,6 +207,8 @@
 }
 
 .contact-form {
+
+
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -224,6 +230,22 @@
     gap: 8px;
     flex-grow: 1;
 }
+
+.contact-form__field input,
+.contact-form__field textarea {
+    resize: vertical;
+    padding: 8px;
+    border-radius: 16px;
+    /* background: rgba(255, 255, 255, 0.15); */
+    border: 2px solid transparent;
+    background:
+        linear-gradient(rgba(255, 255, 255) 0 0) padding-box,
+        var(--PurpleOrange) border-box;
+
+    /* color: #FFF; */
+}
+
+
 
 .swiper {
     width: calc(100%);
@@ -257,7 +279,7 @@
         justify-content: center;
         width: 100%;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
         grid-auto-rows: auto auto;
         gap: 2rem;
     }
@@ -288,6 +310,6 @@
     }
 
     .button .text--heading {
-        font-size: 36px;
+        font-size: 30px;
     }
 }
