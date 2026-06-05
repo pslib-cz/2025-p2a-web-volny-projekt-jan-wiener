@@ -35,10 +35,10 @@ _Shrnutí všech odkazů na jednom místě. Průběžně aktualizujte._
 
 | Výstup | Odkaz |
 |---|---|
-| GitHub Pages (live) | [`Doplň odkaz`](#) |
+| GitHub Pages (live) | [`Doplň odkaz`](https://pslib-cz.github.io/2025-p2a-web-volny-projekt-jan-wiener/index.html) |
 | Grafický manuál (Figma / Canva) | [`Link`](https://www.figma.com/design/54ivVWlvorjxmNvJnyz950/Untitled?node-id=7-7&t=ZCtVJdn0RZKPSuwC-1) |
 | Grafický návrh webu (Figma) | [`link`](https://www.figma.com/design/54ivVWlvorjxmNvJnyz950/Untitled?node-id=0-1&t=ZCtVJdn0RZKPSuwC-1) |
-| Fotografie / média | [`Doplň odkaz`](#) |
+| Fotografie / média | [`Doplň odkaz`](https://github.com/pslib-cz/2025-p2a-web-volny-projekt-jan-wiener/tree/main/images) |
 
 ---
 
