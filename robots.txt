@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: https://pslib-cz.github.io/2025-p2a-web-volny-projekt-jan-wiener/sitemap.xml

@@ -1,7 +1,7 @@
 .site-nav {
     display: flex;
     justify-content: space-between;
-    padding: 0.7rem 1rem 0.4rem 1rem;
+    padding: 0.7rem 1rem 0.4rem;
     align-items: center;
     color: white;
     margin-bottom: 3rem;
@@ -13,6 +13,18 @@
     align-items: center;
 }
 
+.site-nav__links,
+.site-nav__drawer {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav__links {
+    display: flex;
+    align-items: center;
+}
+
 .site-nav__toggle {
     display: none;
     cursor: pointer;
@@ -20,6 +32,9 @@
     justify-content: space-around;
     width: 30px;
     height: 25px;
+    padding: 0;
+    border: 0;
+    background: transparent;
 }
 
 .site-nav__toggle span {
@@ -43,13 +58,22 @@
     padding-top: 60px;
 }
 
-.site-nav__drawer a {
+.site-nav__drawer a,
+.site-nav__drawer button {
     padding: 15px 25px;
     text-decoration: none;
     font-size: 22px;
     color: white;
     display: block;
     transition: color 0.3s ease;
+    border: 0;
+    background: transparent;
+    text-align: left;
+    width: 100%;
+}
+
+.site-nav__drawer > li {
+    position: relative;
 }
 
 .site-nav__drawer a:hover {
@@ -58,10 +82,20 @@
 
 .site-nav__close {
     position: absolute;
-    top: 0;
+    top: 25px;
     right: 25px;
     font-size: 36px;
     cursor: pointer;
+}
+
+.site-nav__drawer .site-nav__close {
+    width: auto;
+    padding: 0;
+    display: block;
+}
+
+.site-nav__links > li {
+    display: flex;
 }
 
 .site-nav a {
@@ -87,7 +121,7 @@
     border-radius: 5px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48rem) {
     .site-nav__links,
     .site-nav__actions .button {
         display: none;
@@ -98,7 +132,7 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48rem) {
     .site-nav__drawer {
         display: none;
     }

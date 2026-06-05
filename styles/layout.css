@@ -6,7 +6,7 @@
     align-content: center;
     gap: 16px;
     color: white;
-    padding: 0rem 1rem 0rem 1rem;
+    padding: 0 1rem;
 }
 
 .page-header {
@@ -128,9 +128,9 @@ footer {
     flex-direction: column;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48rem) {
     .page {
-        padding: 0rem 5rem;
+        padding: 0 5rem;
     }
 
     .content-section {
@@ -147,24 +147,24 @@ footer {
     }
 
     .text--display {
-        font-size: 50px;
+        font-size: 3.1rem;
     }
 
     .text--display.enlarge{
-        font-size: 70px;
+        font-size: 4.3rem;
     }
     
 
     .text--heading {
-        font-size: 26px;
+        font-size: 1.6rem;
     }
 
     .text--heading.enlarge {
-        font-size: 34px;
+        font-size: 2.1rem;
     }
 
     p.enlarge {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     

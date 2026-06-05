@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "lightgallery": "^2.9.0",
+    "normalize.css": "^8.0.1",
     "swiper": "^12.1.4"
   }
 }

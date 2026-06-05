@@ -16,7 +16,13 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Welcome to my personal website! I'm Jan Wiener, a passionate programmer and technology enthusiast. Here, you can learn more about me, explore my projects, and get in touch.">
+    <meta property="og:title" content="Jan Wiener | Contact">
+    <meta property="og:description" content="Welcome to my personal website! I'm Jan Wiener, a passionate programmer and technology enthusiast. Here, you can learn more about me, explore my projects, and get in touch.">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Jan Wiener">
+    <title>Jan Wiener | Contact</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -27,70 +33,71 @@
         </div>
 
         <div class="site-nav__actions">
-            <div class="site-nav__links">
-                <a href="index.html" class="site-nav__link text text--heading">Home</a>
-                <a href="projects.html" class="site-nav__link text text--heading">Projects</a>
-                <a href="contact.html" class="site-nav__link text text--heading">Contact me</a>
-            </div>
+            <ul class="site-nav__links">
+                <li><a href="index.html" class="site-nav__link text text--heading">Home</a></li>
+                <li><a href="projects.html" class="site-nav__link text text--heading">Projects</a></li>
+                <li><a href="contact.html" class="site-nav__link text text--heading">Contact me</a></li>
+            </ul>
 
-            <div class="site-nav__toggle" onclick="toggleMobileMenu()">
+            <button type="button" class="site-nav__toggle" onclick="toggleMobileMenu()" aria-label="Open menu">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
-    <div id="mobileMenu" class="site-nav__drawer">
-        <a href="#" class="site-nav__close text text--heading" onclick="toggleMobileMenu()">&times;</a>
-        <a href="index.html" class="site-nav__link text text--heading">Home</a>
-        <a href="projects.html" class="site-nav__link text text--heading">Projects</a>
-        <a href="contact.html" class="site-nav__link text text--heading">Contact me</a>
+    <ul id="mobileMenu" class="site-nav__drawer">
+        
+            <button type="button" class="site-nav__close text text--heading" onclick="toggleMobileMenu()" aria-label="Close menu">&times;</button>
+        
+        <li><a href="index.html" class="site-nav__link text text--heading">Home</a></li>
+        <li><a href="projects.html" class="site-nav__link text text--heading">Projects</a></li>
+        <li><a href="contact.html" class="site-nav__link text text--heading">Contact me</a></li>
 
-    </div>
+    </ul>
     <script type="module" src="/src/menu.js"></script>
 
 
 
-    <div class="page">
-        <div class="page-header">
-            <p class="page-header__title text text--display enlarge">Contact</p>
-        </div>
+    <main class="page">
+        <header class="page-header">
+            <h1 class="page-header__title text text--display enlarge">Contact</h1>
+        </header>
 
-        <div class="content-section">
-            <p class="text text--heading">Questions & Commissions</p>
+        <section class="content-section">
+            <h2 class="text text--heading">Questions & Commissions</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ullam quidem ipsam consectetur
                 exercitationem, iste, minima reprehenderit quis repudiandae facere eum quaerat! Sed nihil distinctio
                 sunt, voluptatem incidunt aut adipisci.</p>
-        </div>
+        </section>
 
 
-        <div class="contact-form">
+        <form class="contact-form">
             <div class="contact-form__row">
                 <div class="contact-form__field">
-                    <p class="text text--label">First Name</p>
-                    <input type="text" placeholder="Your name">
+                    <label class="text text--label" for="first-name">First Name</label>
+                    <input id="first-name" name="firstName" type="text" placeholder="Your name">
                 </div>
                 <div class="contact-form__field">
-                    <p class="text text--label">Last Name</p>
-                    <input type="text" placeholder="Your name">
+                    <label class="text text--label" for="last-name">Last Name</label>
+                    <input id="last-name" name="lastName" type="text" placeholder="Your name">
                 </div>
 
             </div>
             <div class="contact-form__row">
                 <div class="contact-form__field">
-                    <p class="text text--label">Email</p>
-                    <input type="email" placeholder="Your email">
+                    <label class="text text--label" for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="Your email">
                 </div>
             </div>
             <div class="contact-form__field">
-                <p class="text text--label">Message</p>
-                <textarea placeholder="Your message" rows="5"></textarea>
+                <label class="text text--label" for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your message" rows="5"></textarea>
             </div>
-        </div>
-
-        <button href="./projects.html" class="button button--primary">
-            <p class="text text--heading">Send</p>
-        </button>
+            <button type="submit" class="button button--primary">
+                <span class="text text--heading">Send</span>
+            </button>
+        </form>
 
 
 
@@ -134,7 +141,7 @@
 
 
 
-    </div>
+    </main>
 
 
 

@@ -18,7 +18,13 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Welcome to my personal website! I'm Jan Wiener, a passionate programmer and technology enthusiast. Here, you can learn more about me, explore my projects, and get in touch.">
+    <meta property="og:title" content="Jan Wiener | Projects">
+    <meta property="og:description" content="Welcome to my personal website! I'm Jan Wiener, a passionate programmer and technology enthusiast. Here, you can learn more about me, explore my projects, and get in touch.">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Jan Wiener">
+    <title>Jan Wiener | Projects</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -30,57 +36,59 @@
         </div>
 
         <div class="site-nav__actions">
-            <div class="site-nav__links">
-                <a href="index.html" class="site-nav__link text text--heading">Home</a>
-                <a href="projects.html" class="site-nav__link text text--heading">Projects</a>
-                <a href="contact.html" class="site-nav__link text text--heading">Contact me</a>
-            </div>
+            <ul class="site-nav__links">
+                <li><a href="index.html" class="site-nav__link text text--heading">Home</a></li>
+                <li><a href="projects.html" class="site-nav__link text text--heading">Projects</a></li>
+                <li><a href="contact.html" class="site-nav__link text text--heading">Contact me</a></li>
+            </ul>
 
-            <div class="site-nav__toggle" onclick="toggleMobileMenu()">
+            <button type="button" class="site-nav__toggle" onclick="toggleMobileMenu()" aria-label="Open menu">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
-    <div id="mobileMenu" class="site-nav__drawer">
-        <a href="#" class="site-nav__close text text--heading" onclick="toggleMobileMenu()">&times;</a>
-        <a href="index.html" class="site-nav__link text text--heading">Home</a>
-        <a href="projects.html" class="site-nav__link text text--heading">Projects</a>
-        <a href="contact.html" class="site-nav__link text text--heading">Contact me</a>
+    <ul id="mobileMenu" class="site-nav__drawer">
+        
+            <button type="button" class="site-nav__close text text--heading" onclick="toggleMobileMenu()" aria-label="Close menu">&times;</button>
+        
+        <li><a href="index.html" class="site-nav__link text text--heading">Home</a></li>
+        <li><a href="projects.html" class="site-nav__link text text--heading">Projects</a></li>
+        <li><a href="contact.html" class="site-nav__link text text--heading">Contact me</a></li>
 
-    </div>
+    </ul>
     <script type="module" src="/src/menu.js"></script>
 
 
-    <div class="page projects-page">
+    <main class="page projects-page">
 
-        <div class="page-header">
-            <p class="text text--display enlarge page-header__title-accent ">My Projects</p>
-        </div>
+        <header class="page-header">
+            <h1 class="text text--display enlarge page-header__title-accent ">My Projects</h1>
+        </header>
 
 
-        <div class="content-section">
-            <p class="text text--heading enlarge">About my projects</p>
+        <section class="content-section">
+            <h2 class="text text--heading enlarge">About my projects</h2>
             <p>Having created several projects throughout my journey in programming, I have gained valuable experience
                 in various technologies and methodologies. Although I have developed many smaller programs for personal
                 use, I have also spent time working on larger, more complex projects that have allowed me to apply my
                 skills in more complex, real-world scenarios. For learning purposes, I usually don't use AI agents for
                 building my personal projects.</p>
-        </div>
+        </section>
 
-        <div class="featured-projects">
-            <div class="featured-project" id="prj1">
-                <div class="featured-project__header">
+        <section class="featured-projects" aria-label="Featured projects">
+            <article class="featured-project" id="prj1">
+                <header class="featured-project__header">
                     <a href="images/projects/orsu1.png" data-lg-size="1600-900"
                         data-sub-html="<h4>Mountain Trail</h4><p>Early morning light on the ridge</p>"
                         data-caption="Mountain Trail" class="featured-project__image">
 
-                        <img src="images/projects/orsu1.png" alt="">
+                        <img src="images/projects/orsu1.png" alt="O-rs-u screenshot">
                     </a>
 
-                    <p class="text text--display featured-project__title enlarge">o-rs-u</p>
-                </div>
+                    <h2 class="text text--display featured-project__title enlarge">o-rs-u</h2>
+                </header>
 
                 <div class="featured-project__body">
                     <p class="enlarge">O-rs-u is, as of now, my biggest project. It is essentially the popular rhythm
@@ -104,11 +112,11 @@
                         <p class="text text--heading">Github</p>
                     </a>
                 </div>
-            </div>
-        </div>
+            </article>
+        </section>
 
 
-        <p class="text text--heading projects__subtitle">Small Projects</p>
+        <h2 class="text text--heading projects__subtitle">Small Projects</h2>
 
 
 
@@ -116,9 +124,9 @@
         <div class="swiper">
 
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
+                <article class="swiper-slide">
                     <div class="project-card project-card--accent ">
-                        <p class="project-card__header text text--heading">KDE Discord RPC</p>
+                        <h3 class="project-card__header text text--heading">KDE Discord RPC</h3>
                         <div class="project-card__body">
                             <p>A small utility to integrate KDE media playback with Discord RPC</p>
                         </div>
@@ -141,11 +149,11 @@
                             <p class="text text--heading">Github</p>
                         </a>
                     </div>
-                </div>
+                </article>
 
-                <div class="swiper-slide">
+                <article class="swiper-slide">
                     <div class="project-card project-card--accent ">
-                        <p class="project-card__header text text--heading">A chess engine</p>
+                        <h3 class="project-card__header text text--heading">A chess engine</h3>
                         <div class="project-card__body">
                             <p>A very simple chess engine in Python, being of my first larger coding projects</p>
                         </div>
@@ -164,10 +172,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
+                </article>
+                <article class="swiper-slide">
                     <div class="project-card project-card--accent ">
-                        <p class="project-card__header text text--heading">A kyber-encrypted messaging app</p>
+                        <h3 class="project-card__header text text--heading">A kyber-encrypted messaging app</h3>
                         <div class="project-card__body">
                             <p>A small python program for encrypted messaging in python.</p>
                         </div>
@@ -186,10 +194,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
+                </article>
+                <article class="swiper-slide">
                     <div class="project-card project-card--accent ">
-                        <p class="project-card__header text text--heading">Cards against humanity</p>
+                        <h3 class="project-card__header text text--heading">Cards against humanity</h3>
                         <div class="project-card__body">
                             <p>A Qt6 python app & server for the popular card game "Cards against humanity".</p>
                         </div>
@@ -211,10 +219,10 @@
                             <p class="text text--heading">Github</p>
                         </a>
                     </div>
-                </div>
-                <div class="swiper-slide">
+                </article>
+                <article class="swiper-slide">
                     <div class="project-card project-card--accent ">
-                        <p class="project-card__header text text--heading">Keyboard macros for games</p>
+                        <h3 class="project-card__header text text--heading">Keyboard macros for games</h3>
                         <div class="project-card__body">
                             <p>A macro app for games, utilizing the kernel driver "intercept", which allows one to do
                                 advanced macros even for games, which don't typically allow it.</p>
@@ -234,7 +242,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </article>
 
             </div>
 
@@ -283,7 +291,7 @@
         </footer>
 
 
-    </div>
+    </main>
 
 
 
