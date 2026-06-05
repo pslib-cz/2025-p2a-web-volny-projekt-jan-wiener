@@ -3,9 +3,9 @@ import lgZoom from 'lightgallery/plugins/zoom';
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import 'lightgallery/css/lightgallery-bundle.css';
 
-const prj1Image1 = new URL('/images/projects/orsu1.png', import.meta.url).href;
-const prj1Image2 = new URL('/images/projects/orsu2.png', import.meta.url).href;
-const prj1Image3 = new URL('/images/projects/orsu3.png', import.meta.url).href;
+const prj1Image1 = new URL('/images/projects/orsu1.avif', import.meta.url).href;
+const prj1Image2 = new URL('/images/projects/orsu2.avif', import.meta.url).href;
+const prj1Image3 = new URL('/images/projects/orsu3.avif', import.meta.url).href;
 
 
 const prj1Images = [

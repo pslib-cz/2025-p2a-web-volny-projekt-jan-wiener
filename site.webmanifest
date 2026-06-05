@@ -1,0 +1,32 @@
+{
+  "name": "Jan Wiener",
+  "short_name": "Jan Wiener",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#111111",
+  "icons": [
+    {
+      "src": "./images/logo16.avif",
+      "sizes": "16x16",
+      "type": "image/avif"
+    },
+    {
+      "src": "./images/logo32.avif",
+      "sizes": "32x32",
+      "type": "image/avif"
+    },
+    {
+      "src": "./images/logo144.avif",
+      "sizes": "144x144",
+      "type": "image/avif"
+    },
+    {
+      "src": "./images/logo.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

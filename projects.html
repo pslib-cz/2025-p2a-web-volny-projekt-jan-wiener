@@ -26,6 +26,11 @@
     <meta property="og:site_name" content="Jan Wiener">
     <title>Jan Wiener | Projects</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./images/logo32.avif" type="image/avif" sizes="32x32">
+    <link rel="icon" href="./images/logo16.avif" type="image/avif" sizes="16x16">
+    <link rel="icon" href="./images/logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="./images/logo144.avif">
+    <link rel="manifest" href="./site.webmanifest">
 </head>
 
 <body>
@@ -38,7 +43,7 @@
         <div class="site-nav__actions">
             <ul class="site-nav__links">
                 <li><a href="index.html" class="site-nav__link text text--heading">Home</a></li>
-                <li><a href="projects.html" class="site-nav__link text text--heading">Projects</a></li>
+                <li><a href="projects.html" class="site-nav__link text text--heading" aria-current="page">Projects</a></li>
                 <li><a href="contact.html" class="site-nav__link text text--heading">Contact me</a></li>
             </ul>
 
@@ -61,7 +66,7 @@
     <script type="module" src="/src/menu.js"></script>
 
 
-    <main class="page projects-page">
+    <main id="content" class="page projects-page">
 
         <header class="page-header">
             <h1 class="text text--display enlarge page-header__title-accent ">My Projects</h1>
@@ -80,11 +85,11 @@
         <section class="featured-projects" aria-label="Featured projects">
             <article class="featured-project" id="prj1">
                 <header class="featured-project__header">
-                    <a href="images/projects/orsu1.png" data-lg-size="1600-900"
+                        <a href="images/projects/orsu1.avif" data-lg-size="1600-900"
                         data-sub-html="<h4>Mountain Trail</h4><p>Early morning light on the ridge</p>"
                         data-caption="Mountain Trail" class="featured-project__image">
 
-                        <img src="images/projects/orsu1.png" alt="O-rs-u screenshot">
+                        <img src="images/projects/orsu1.avif" alt="O-rs-u screenshot" loading="lazy">
                     </a>
 
                     <h2 class="text text--display featured-project__title enlarge">o-rs-u</h2>
@@ -108,7 +113,7 @@
                     <!-- <a href="./projects.html" class="button button--primary">
                         <p class="text text--heading">Projects</p>
                     </a> -->
-                    <a href="https://github.com/jan-wiener/o-rs-u" class="button button--secondary" target="_blank">
+                    <a href="https://github.com/jan-wiener/o-rs-u" class="button button--secondary" target="_blank" rel="noopener noreferrer">
                         <p class="text text--heading">Github</p>
                     </a>
                 </div>
@@ -145,7 +150,7 @@
                             </div>
 
                         </div>
-                        <a href="https://github.com/jan-wiener/discord-rpc-linux-rs" class="button button--secondary" target="_blank">
+                        <a href="https://github.com/jan-wiener/discord-rpc-linux-rs" class="button button--secondary" target="_blank" rel="noopener noreferrer">
                             <p class="text text--heading">Github</p>
                         </a>
                     </div>
@@ -215,7 +220,7 @@
                                 <p>Server & Client, Game, Gui</p>
                             </div>
                         </div>
-                        <a href="https://github.com/jan-wiener/karty-proti-lidskosti" class="button button--secondary" target="_blank">
+                        <a href="https://github.com/jan-wiener/karty-proti-lidskosti" class="button button--secondary" target="_blank" rel="noopener noreferrer">
                             <p class="text text--heading">Github</p>
                         </a>
                     </div>
@@ -274,7 +279,7 @@
                 </div>
                 <div class="site-footer__column">
                     <p class="text text--label">Other Links</p>
-                    <a href="https://github.com" target="_blank">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
                         <p>GitHub</p>
                     </a>
                 </div>

@@ -58,6 +58,10 @@
     padding-top: 60px;
 }
 
+.site-nav__drawer.is-open {
+    width: 100%;
+}
+
 .site-nav__drawer a,
 .site-nav__drawer button {
     padding: 15px 25px;
@@ -69,7 +73,7 @@
     border: 0;
     background: transparent;
     text-align: left;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .site-nav__drawer > li {
