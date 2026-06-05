@@ -113,6 +113,10 @@
     box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.50);
 }
 
+.featured-project p {
+    line-height: 1.4;
+}
+
 .featured-project__image {
     align-self: stretch;
     border-radius: 4px;
