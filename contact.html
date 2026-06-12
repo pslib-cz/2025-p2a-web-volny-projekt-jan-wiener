@@ -16,17 +16,25 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to my personal website! I'm Jan Wiener, a passionate programmer and technology enthusiast. Here, you can learn more about me, explore my projects, and get in touch.">
+    <meta name="description"
+        content="Welcome to my personal website! I'm Jan Wiener, a passionate programmer and technology enthusiast. Here, you can learn more about me, explore my projects, and get in touch.">
     <meta property="og:title" content="Jan Wiener | Contact">
-    <meta property="og:description" content="Welcome to my personal website! I'm Jan Wiener, a passionate programmer and technology enthusiast. Here, you can learn more about me, explore my projects, and get in touch.">
+    <meta property="og:description"
+        content="Welcome to my personal website! I'm Jan Wiener, a passionate programmer and technology enthusiast. Here, you can learn more about me, explore my projects, and get in touch.">
     <meta property="og:image" content="images/logo.png">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Jan Wiener">
     <title>Jan Wiener | Contact</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./images/logo32.avif" type="image/avif" sizes="32x32">
+    <!-- <link rel="icon" href="./images/logo32.avif" type="image/avif" sizes="32x32">
     <link rel="icon" href="./images/logo16.avif" type="image/avif" sizes="16x16">
-    <link rel="icon" href="./images/logo.png" type="image/png">
+    <link rel="icon" href="./images/logo.png" type="image/png"> -->
+    <link rel="icon" type="image/png" href="/images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/images/favicon/site.webmanifest" />
+    
     <link rel="apple-touch-icon" href="./images/logo144.avif">
     <link rel="manifest" href="./site.webmanifest">
 </head>
@@ -41,7 +49,8 @@
             <ul class="site-nav__links">
                 <li><a href="index.html" class="site-nav__link text text--heading">Home</a></li>
                 <li><a href="projects.html" class="site-nav__link text text--heading">Projects</a></li>
-                <li><a href="contact.html" class="site-nav__link text text--heading" aria-current="page">Contact me</a></li>
+                <li><a href="contact.html" class="site-nav__link text text--heading" aria-current="page">Contact me</a>
+                </li>
             </ul>
 
             <button type="button" class="site-nav__toggle" onclick="toggleMobileMenu()" aria-label="Open menu">
@@ -52,9 +61,10 @@
         </div>
     </nav>
     <ul id="mobileMenu" class="site-nav__drawer">
-        
-            <button type="button" class="site-nav__close text text--heading" onclick="toggleMobileMenu()" aria-label="Close menu">&times;</button>
-        
+
+        <button type="button" class="site-nav__close text text--heading" onclick="toggleMobileMenu()"
+            aria-label="Close menu">&times;</button>
+
         <li><a href="index.html" class="site-nav__link text text--heading">Home</a></li>
         <li><a href="projects.html" class="site-nav__link text text--heading">Projects</a></li>
         <li><a href="contact.html" class="site-nav__link text text--heading">Contact me</a></li>
